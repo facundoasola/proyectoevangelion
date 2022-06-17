@@ -1,0 +1,41 @@
+
+header { max-width: 100%;}
+header img {
+    max-width: 100%;
+
+}
+.header {
+    &_imagenes {
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        ;
+        transition: 0.5s all ease-in-out
+        ; list-style: none;
+        margin-bottom: 3.4rem;
+        
+    }
+    &_imagenes :hover img { 
+        transform: scale(1.3)
+    
+    }
+    &_logo { transition: 0.5s all ease-in-out;
+        display:flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+        background: rgb(251,106,13);
+        background: -moz-linear-gradient(0deg, rgba(251,106,13,1) 0%, rgba(179,31,43,1) 56%);
+        background: -webkit-linear-gradient(0deg, rgba(251,106,13,1) 0%, rgba(179,31,43,1) 56%);
+        background: linear-gradient(0deg, rgba(251,106,13,1) 0%, rgba(179,31,43,1) 56%);
+        filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#fb6a0d",endColorstr="#b31f2b",GradientType=1);
+    
+      ;
+       ;
+       
+
+    }
+    &_logo :hover {
+        transform: scale(1.3)
+    }
+}

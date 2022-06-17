@@ -1,0 +1,85 @@
+main {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    max-width: 100%;
+    flex-direction: column;
+}
+
+.main {
+    &_titulo {   font-family: 'Inconsolata';
+        font-size: 30px;
+        font-weight: 700;
+        ;color: #b31f2b;
+
+    }
+    &_izquierda {
+        display: none;
+        justify-content: right;
+        margin-right: 1rem;
+        }
+        &_derecha {
+            margin-left: 1rem;
+            display: none;
+        }
+        &_articulo {
+
+            display: flex;
+            justify-content: center;
+            align-items: center;
+           
+        background-color: black
+        
+        ;
+        flex-direction: column;
+        
+        height: auto;
+        width: 300px
+        
+        ;}
+        
+        &_articulo2 {
+            justify-content: center;
+            align-items: center;
+            background: rgb(0,0,0);
+                   background: -moz-linear-gradient(180deg, rgba(0,0,0,1) 45%, rgba(179,31,43,1) 66%, rgba(251,106,13,1) 88%, rgba(248,103,14,1) 90%);
+                   background: -webkit-linear-gradient(180deg, rgba(0,0,0,1) 45%, rgba(179,31,43,1) 66%, rgba(251,106,13,1) 88%, rgba(248,103,14,1) 90%);
+                   background: linear-gradient(180deg, rgba(0,0,0,1) 45%, rgba(179,31,43,1) 66%, rgba(251,106,13,1) 88%, rgba(248,103,14,1) 90%);
+                   filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#000000",endColorstr="#f8670e",GradientType=1);
+        display: flex;
+        width: 300px;
+        }
+        &_texto {
+           
+            font-family: 'Inconsolata';
+            font-weight: 300;
+            font-size: large;
+            color: azure;
+        
+        }
+        &_texto::first-letter {
+            color: #b31f2b;
+            font-size: larger;
+        }
+        &_texto2 {
+            font-family: 'Inconsolata';
+            font-weight: 300;
+            font-size: large;
+            color: azure;
+        
+        
+        }
+        &_imagenes {
+            opacity: 100%;
+            width: 250px;
+            height: 250px;
+        ;
+        }
+        &_imagen2 {
+            max-width: 100%;
+        
+         
+        
+        }
+        
+}

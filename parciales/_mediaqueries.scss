@@ -1,0 +1,68 @@
+@media screen and (min-width:768px) {
+    header img {
+        max-width: 100%;
+    }
+    aside img {
+        max-width: 100%;
+    }
+    .main_titulo {
+        font-family: 'Inconsolata';
+        font-size: 40px;
+        font-weight: 700;
+        ;color: #b31f2b;
+    }
+    .main_izquierda {
+        display: flex;
+        justify-content: right;
+        margin-right: 1rem;
+        }
+      
+        .main_derecha {
+            margin-left: 1rem;
+            display: flex;
+        }
+        .main_articulo {
+            position: relative;
+               display: flex;
+               justify-content: top;
+               align-items: center;
+               background: url(../assets/texto.jpg) no-repeat center  ;
+           flex-direction: column;
+           
+           height: 800px;
+           width: 600px;
+           
+           
+           ;}
+           .main_articulo2 {
+            position: relative;
+               display: flex;
+               justify-content: top;
+               align-items: center;
+              
+           flex-direction: column;
+           background: rgb(0,0,0);
+           background: -moz-linear-gradient(180deg, rgba(0,0,0,1) 45%, rgba(179,31,43,1) 66%, rgba(251,106,13,1) 88%, rgba(248,103,14,1) 90%);
+           background: -webkit-linear-gradient(180deg, rgba(0,0,0,1) 45%, rgba(179,31,43,1) 66%, rgba(251,106,13,1) 88%, rgba(248,103,14,1) 90%);
+           background: linear-gradient(180deg, rgba(0,0,0,1) 45%, rgba(179,31,43,1) 66%, rgba(251,106,13,1) 88%, rgba(248,103,14,1) 90%);
+           filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#000000",endColorstr="#f8670e",GradientType=1);
+    
+           height: auto;
+           width: 600px;
+           
+           ;}}
+
+
+
+
+
+@media screen and (min-width: 1024px ) {   
+    .main_titulo {
+    font-family: 'Inconsolata';
+    font-size: 40px;
+    font-weight: 700;
+    ;color: #b31f2b;
+}
+
+
+}
