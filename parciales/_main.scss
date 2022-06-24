@@ -1,7 +1,14 @@
+
+$pesodefuente:(Chica:300 ,
+Grande:700);
+@mixin supercentrado 
+{justify-content:center;
+ align-items: center;
+ display: flex;
+}
+
 main {
-    display: flex;
-    justify-content: center;
-    align-items: center;
+    @include supercentrado ;
     max-width: 100%;
     flex-direction: column;
 }
@@ -9,7 +16,7 @@ main {
 .main {
     &_titulo {   font-family: 'Inconsolata';
         font-size: 30px;
-        font-weight: 700;
+        font-weight: map-get($pesodefuente, grande )
         ;color: #b31f2b;
 
     }
@@ -24,9 +31,7 @@ main {
         }
         &_articulo {
 
-            display: flex;
-            justify-content: center;
-            align-items: center;
+            @include supercentrado ;
            
         background-color: black
         
@@ -39,20 +44,19 @@ main {
         ;}
         
         &_articulo2 {
-            justify-content: center;
-            align-items: center;
+            @include supercentrado ;
             background: rgb(0,0,0);
                    background: -moz-linear-gradient(180deg, rgba(0,0,0,1) 45%, rgba(179,31,43,1) 66%, rgba(251,106,13,1) 88%, rgba(248,103,14,1) 90%);
                    background: -webkit-linear-gradient(180deg, rgba(0,0,0,1) 45%, rgba(179,31,43,1) 66%, rgba(251,106,13,1) 88%, rgba(248,103,14,1) 90%);
                    background: linear-gradient(180deg, rgba(0,0,0,1) 45%, rgba(179,31,43,1) 66%, rgba(251,106,13,1) 88%, rgba(248,103,14,1) 90%);
                    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#000000",endColorstr="#f8670e",GradientType=1);
-        display: flex;
+      
         width: 300px;
         }
         &_texto {
            
             font-family: 'Inconsolata';
-            font-weight: 300;
+            font-weight: map-get($pesodefuente, Chica );
             font-size: large;
             color: azure;
         
@@ -62,10 +66,7 @@ main {
             font-size: larger;
         }
         &_texto2 {
-            font-family: 'Inconsolata';
-            font-weight: 300;
-            font-size: large;
-            color: azure;
+         @extend .main_texto
         
         
         }
@@ -77,9 +78,7 @@ main {
         }
         &_imagen2 {
             max-width: 100%;
-        
-         
-        
+    
         }
         
 }
